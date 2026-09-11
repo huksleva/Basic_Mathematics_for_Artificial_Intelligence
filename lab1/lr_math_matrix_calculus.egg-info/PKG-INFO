@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: lr-math-matrix-calculus
+Version: 1.0.0
+Summary: Лабораторная работа по математическому анализу и матричному исчислению
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.24
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: jupyter>=1.0
