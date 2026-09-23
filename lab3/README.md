@@ -1,6 +1,6 @@
 # Лабораторная работа №3. Скалярное автоматическое дифференцирование и обучение одного нейрона
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huksleva/Basic_Mathematics_for_Artificial_Intelligence/blob/main/lab3/student_autograd_lab.ipynb)
 
 **Выполнил:** Тоц Леонид Александрович
 **Группа:** ИВТ-2
