@@ -1,5 +1,7 @@
 # ЛР № 01. Основы языковых моделей — выполненный вариант (Greenfield Town)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huksleva/Basic_Mathematics_for_Artificial_Intelligence/blob/main/lab2/lab_01_student.ipynb)
+
 Готовый `student`-ноутбук: все функции с `TODO` реализованы, notebook выполнен от начала
 до конца без ошибок, все контрольные `assert` и все 9 проверок обязательного
 мини-портфолио прошли (`✓`). Markdown-ячейки с выводами, ручной проверкой softmax,
@@ -7,15 +9,15 @@
 
 ## Что внутри `lab_01_student.ipynb`
 
-| § | Реализовано | Ключевой результат |
-| --- | --- | --- |
-| 1 | `tokenize`, `build_vocabulary`, `doc_to_bow`, `make_ngrams` | словарь 51 токен, DTM `(12, 51)`, BoW переставленных фраз совпадает, биграммы — нет |
-| 2 | `SimpleClassifier` (Linear→ReLU→Linear), обучение 800 шагов | loss 1.0895 → 0.0056; оба новых документа классифицированы верно |
-| 3 | `make_skipgram_pairs`, `SkipGramModel`, `nearest_words` | 196 пар, словарь 33 токена; ближайший сосед `gardener` — `garden` (cos ≈ 0.573) |
-| 4 | `initialize_vocabulary`, `get_pair_counts`, `merge_pair`, `byte_pair_encoding`, `tokenize_word` | словарь BPE 50 токенов, 33 слияния; `garden7 → ['_garden', '<UNK>']` |
-| 5 | `CountLanguageModel`, `train`, `generate_text`, `compute_perplexity` | backoff работает, `P(unknown)` > 0, сумма вероятностей = 1, PPL = 5.63 |
-| 6 | `ngram_counter`, `rouge_n_recall`, `lcs_length`, `rouge_l`, `expected_score`, `update_elo` | ROUGE-1/2/L кандидата A = 1.0 / 0.6 / 0.831; сумма Elo-рейтингов сохранена (4500) |
-| Портфолио | базовый обязательный прогон + песочница `CUSTOM_CASE` | все 9 инвариантов ✓; песочница не меняет базовый результат |
+| §         | Реализовано                                                                                     | Ключевой результат                                                                  |
+|-----------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| 1         | `tokenize`, `build_vocabulary`, `doc_to_bow`, `make_ngrams`                                     | словарь 51 токен, DTM `(12, 51)`, BoW переставленных фраз совпадает, биграммы — нет |
+| 2         | `SimpleClassifier` (Linear→ReLU→Linear), обучение 800 шагов                                     | loss 1.0895 → 0.0056; оба новых документа классифицированы верно                    |
+| 3         | `make_skipgram_pairs`, `SkipGramModel`, `nearest_words`                                         | 196 пар, словарь 33 токена; ближайший сосед `gardener` — `garden` (cos ≈ 0.573)     |
+| 4         | `initialize_vocabulary`, `get_pair_counts`, `merge_pair`, `byte_pair_encoding`, `tokenize_word` | словарь BPE 50 токенов, 33 слияния; `garden7 → ['_garden', '<UNK>']`                |
+| 5         | `CountLanguageModel`, `train`, `generate_text`, `compute_perplexity`                            | backoff работает, `P(unknown)` > 0, сумма вероятностей = 1, PPL = 5.63              |
+| 6         | `ngram_counter`, `rouge_n_recall`, `lcs_length`, `rouge_l`, `expected_score`, `update_elo`      | ROUGE-1/2/L кандидата A = 1.0 / 0.6 / 0.831; сумма Elo-рейтингов сохранена (4500)   |
+| Портфолио | базовый обязательный прогон + песочница `CUSTOM_CASE`                                           | все 9 инвариантов ✓; песочница не меняет базовый результат                          |
 
 Ручная математика §2.1 (softmax и кросс-энтропия для логитов `(2.0, 1.0, 0.5)`),
 паспорт результата (4 блока: BoW, skip-gram, BPE, Count LM) и оценки Лайкерта кандидата A
