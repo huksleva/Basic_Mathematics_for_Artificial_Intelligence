@@ -1,13 +1,13 @@
-# ЛР № 01. Основы языковых моделей — выполненный вариант (Greenfield Town)
+# ЛР №2. Основы языковых моделей — выполненный вариант (Greenfield Town)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huksleva/Basic_Mathematics_for_Artificial_Intelligence/blob/main/lab2/lab_01_student.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huksleva/Basic_Mathematics_for_Artificial_Intelligence/blob/main/lab2/lab_02_student.ipynb)
 
 Готовый `student`-ноутбук: все функции с `TODO` реализованы, notebook выполнен от начала
 до конца без ошибок, все контрольные `assert` и все 9 проверок обязательного
 мини-портфолио прошли (`✓`). Markdown-ячейки с выводами, ручной проверкой softmax,
 паспортом результата и оценками Лайкерта заполнены.
 
-## Что внутри `lab_01_student.ipynb`
+## Что внутри `lab_02_student.ipynb`
 
 | §         | Реализовано                                                                                     | Ключевой результат                                                                  |
 |-----------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
