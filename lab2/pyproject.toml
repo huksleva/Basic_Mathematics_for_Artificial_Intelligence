@@ -1,0 +1,16 @@
+[project]
+name = "lab-01-language-model-basics"
+version = "0.1.0"
+description = "ЛР № 01. Основы языковых моделей — окружение для Greenfield Town (student/teacher/example notebooks)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "torch>=2.2",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.29",
+]
+
+[tool.uv]
+package = false

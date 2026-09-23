@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-lr_math_matrix_calculus.egg-info/PKG-INFO
-lr_math_matrix_calculus.egg-info/SOURCES.txt
-lr_math_matrix_calculus.egg-info/dependency_links.txt
-lr_math_matrix_calculus.egg-info/requires.txt
-lr_math_matrix_calculus.egg-info/top_level.txt
