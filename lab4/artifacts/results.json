@@ -1,0 +1,164 @@
+{
+  "author": "Тоц Леонид Александрович",
+  "group": "ИВТ-2",
+  "date": "2026-10-06",
+  "task": "binary_classification",
+  "dataset": "Banknote Authentication",
+  "source": "https://archive.ics.uci.edu/dataset/267/banknote+authentication",
+  "doi": "10.24432/C55P57",
+  "license": "CC BY 4.0",
+  "sha256": "d0539aaed2139ba7a587b3e34fb345ce503ff7d5d33dbf9912d8e195ce425cb9",
+  "environment": {
+    "python": "3.13.2",
+    "numpy": "2.5.1",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.0",
+    "device": "CPU"
+  },
+  "audit": {
+    "raw_rows": 1372,
+    "unique_rows": 1348,
+    "removed_duplicates": 24,
+    "features": 4,
+    "raw_class_counts": [
+      762,
+      610
+    ],
+    "class_counts": [
+      738,
+      610
+    ],
+    "missing_values": 0
+  },
+  "config": {
+    "layer_sizes": [
+      4,
+      32,
+      16,
+      1
+    ],
+    "activation": "relu",
+    "l2": 0.0001,
+    "model_seed": 42,
+    "split_seed": 42,
+    "shuffle_seed": 43,
+    "epochs": 150,
+    "batch_size": 32,
+    "learning_rate": 0.03,
+    "momentum": 0.9,
+    "patience": 20,
+    "min_delta": 1e-05
+  },
+  "splits": {
+    "train": {
+      "rows": 809,
+      "class_counts": [
+        443,
+        366
+      ]
+    },
+    "val": {
+      "rows": 270,
+      "class_counts": [
+        148,
+        122
+      ]
+    },
+    "test": {
+      "rows": 269,
+      "class_counts": [
+        147,
+        122
+      ]
+    }
+  },
+  "scaler": {
+    "mean": [
+      0.4763401725587145,
+      1.9238481023485796,
+      1.3785932017181726,
+      -1.1209528152039554
+    ],
+    "scale": [
+      2.900209946915115,
+      5.848657911456831,
+      4.26020347723211,
+      2.105808063847485
+    ]
+  },
+  "parameters": 705,
+  "initial_loss": {
+    "train": 0.7281816727703979,
+    "val": 0.7424785092620739
+  },
+  "best_epoch": 149,
+  "stop_epoch": 150,
+  "early_stopping_triggered": false,
+  "threshold": 0.5,
+  "threshold_rule": "max val F1; ties: closest to 0.5, then smaller",
+  "gradient_checks": {
+    "relu": {
+      "parameters_checked": 47,
+      "max_absolute_error": 1.4852509500062894e-10,
+      "relative_l2_error": 6.332573996970183e-10
+    },
+    "tanh": {
+      "parameters_checked": 47,
+      "max_absolute_error": 1.1692785671993389e-10,
+      "relative_l2_error": 6.148636859090495e-10
+    }
+  },
+  "metrics": {
+    "train": {
+      "loss": 0.00029867179810028137,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "tn": 443,
+      "fp": 0,
+      "fn": 0,
+      "tp": 366
+    },
+    "val": {
+      "loss": 0.00022418964378512484,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "tn": 148,
+      "fp": 0,
+      "fn": 0,
+      "tp": 122
+    },
+    "test": {
+      "loss": 0.0004458058476654184,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "tn": 147,
+      "fp": 0,
+      "fn": 0,
+      "tp": 122
+    }
+  },
+  "test_at_05": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "average_precision": 1.0,
+    "tn": 147,
+    "fp": 0,
+    "fn": 0,
+    "tp": 122
+  }
+}

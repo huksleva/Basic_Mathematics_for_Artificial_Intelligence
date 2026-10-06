@@ -1,0 +1,10 @@
+*.pdf binary
+*.png binary
+*.npz binary
+*.zip binary
+data/data_banknote_authentication.txt -text whitespace=cr-at-eol
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
