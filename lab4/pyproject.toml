@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lab4-numpy-mlp"
+version = "1.0.0"
+description = "ЛР4: полносвязная нейронная сеть и backpropagation на NumPy, CPU"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Тоц Леонид Александрович" }]
+dependencies = [
+    "numpy>=2.0,<3",
+    "pandas>=2.2,<4",
+    "matplotlib>=3.8,<4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4",
+    "nbclient>=0.10",
+    "nbformat>=5.10",
+    "ipykernel>=6.29",
+    "pytest>=8",
+    "scikit-learn>=1.5",
+    "reportlab>=4",
+    "pypdf>=5",
+]
+
+[tool.setuptools]
+py-modules = ["mlp", "experiment"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

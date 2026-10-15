@@ -74,6 +74,14 @@ python -m venv .venv
 .\.venv\Scripts\python.exe experiment.py
 ```
 
+Также доступна установка проекта через `pyproject.toml`:
+
+```powershell
+python -m pip install -e .
+# Jupyter, тесты и сборка отчёта:
+python -m pip install -e ".[dev]"
+```
+
 Чтобы открыть ноутбук, выберите интерпретатор этого окружения в Jupyter или IDE.
 Он должен лежать рядом с `mlp.py`, `experiment.py` и папкой `data`.
 Для локальной сборки и тестов установите дополнительные библиотеки:

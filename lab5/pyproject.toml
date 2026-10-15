@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lab5-vector-binary-classification"
+version = "1.0.0"
+description = "ЛР5: векторный вход и бинарная классификация на скалярном autograd"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Тоц Леонид Александрович" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4",
+    "nbclient>=0.10",
+    "nbformat>=5.10",
+    "ipykernel>=6.29",
+    "pytest>=8",
+]
+
+[tool.setuptools]
+py-modules = ["vector_binary_classification", "experiment"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
