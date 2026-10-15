@@ -26,13 +26,23 @@
 
 ## Как запустить самостоятельно
 
+### Google Colab
+
+Нажмите **Open In Colab** и выберите **Среда выполнения → Выполнить всё**.
+В чистой среде Colab первая ячейка автоматически загружает
+`data/greenfield_town.json` из этого репозитория. Достаточно среды CPU;
+NumPy, Matplotlib и PyTorch уже входят в среду Colab.
+
+### Локально
+
 ```bash
-uv sync --locked
+uv sync
 uv run jupyter lab
 ```
 
-Notebook ожидает `data/greenfield_town.json` в текущем каталоге или в
-`01-lab-language-model-basics/data/greenfield_town.json`. Данные и seed (`42`) не менялись.
+Запускайте команды из `lab2`. Notebook ищет `data/greenfield_town.json`
+в текущем каталоге, в `lab2` относительно корня репозитория или в прежнем каталоге
+`01-lab-language-model-basics`. Данные и seed (`42`) не менялись.
 
 ## Что не входит в сдачу
 
